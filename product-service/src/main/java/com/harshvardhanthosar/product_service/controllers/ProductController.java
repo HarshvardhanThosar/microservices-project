@@ -1,10 +1,10 @@
 package com.harshvardhanthosar.product_service.controllers;
 
+import com.harshvardhanthosar.product_service.dtos.RegisterProductRequestBodyDTO;
 import com.harshvardhanthosar.product_service.dtos.ResponseBodyDTO;
 import com.harshvardhanthosar.product_service.dtos.UpdateProductRequestBodyDTO;
 import com.harshvardhanthosar.product_service.exceptions.ResourceNotFoundException;
 import com.harshvardhanthosar.product_service.models.Product;
-import com.harshvardhanthosar.product_service.dtos.RegisterProductRequestBodyDTO;
 import com.harshvardhanthosar.product_service.services.ProductService;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;

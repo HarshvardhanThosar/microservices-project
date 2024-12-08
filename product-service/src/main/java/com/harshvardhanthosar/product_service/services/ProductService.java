@@ -1,9 +1,9 @@
 package com.harshvardhanthosar.product_service.services;
 
+import com.harshvardhanthosar.product_service.dtos.RegisterProductRequestBodyDTO;
 import com.harshvardhanthosar.product_service.dtos.UpdateProductRequestBodyDTO;
 import com.harshvardhanthosar.product_service.exceptions.ResourceNotFoundException;
 import com.harshvardhanthosar.product_service.models.Product;
-import com.harshvardhanthosar.product_service.dtos.RegisterProductRequestBodyDTO;
 import com.harshvardhanthosar.product_service.repositories.ProductRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

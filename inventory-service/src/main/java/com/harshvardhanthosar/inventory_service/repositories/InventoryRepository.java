@@ -1,6 +1,6 @@
-package com.harshvardhanthosar.product_service.repositories;
+package com.harshvardhanthosar.inventory_service.repositories;
 
-import com.harshvardhanthosar.product_service.models.Inventory;
+import com.harshvardhanthosar.inventory_service.models.Inventory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

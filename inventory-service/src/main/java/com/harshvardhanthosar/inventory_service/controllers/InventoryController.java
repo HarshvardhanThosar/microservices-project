@@ -1,12 +1,12 @@
-package com.harshvardhanthosar.product_service.controllers;
+package com.harshvardhanthosar.inventory_service.controllers;
 
-import com.harshvardhanthosar.product_service.dtos.RegisterInventoryRequestBodyDTO;
-import com.harshvardhanthosar.product_service.dtos.ResponseBodyDTO;
-import com.harshvardhanthosar.product_service.dtos.UpdateInventoryRequestBodyDTO;
-import com.harshvardhanthosar.product_service.exceptions.ResourceAlreadyExistsException;
-import com.harshvardhanthosar.product_service.exceptions.ResourceNotFoundException;
-import com.harshvardhanthosar.product_service.models.Inventory;
-import com.harshvardhanthosar.product_service.services.InventoryService;
+import com.harshvardhanthosar.inventory_service.dtos.RegisterInventoryRequestBodyDTO;
+import com.harshvardhanthosar.inventory_service.dtos.ResponseBodyDTO;
+import com.harshvardhanthosar.inventory_service.dtos.UpdateInventoryRequestBodyDTO;
+import com.harshvardhanthosar.inventory_service.exceptions.ResourceAlreadyExistsException;
+import com.harshvardhanthosar.inventory_service.exceptions.ResourceNotFoundException;
+import com.harshvardhanthosar.inventory_service.models.Inventory;
+import com.harshvardhanthosar.inventory_service.services.InventoryService;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
