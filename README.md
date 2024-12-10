@@ -1,4 +1,10 @@
-# Microservices Project
+# Microservices Design 5
+
+#### Ecommerce product and inventory services
+
+#### Submitted by - Harshvardhan Sushilkumar Thosar - A00325776
+
+#### Submitted to - Prof. Jackie Stewart
 
 ## Overview
 
@@ -89,4 +95,6 @@ The inventory-service relies on the schemas and tables created by the product-se
 - Ensure that the H2 database container remains running as it is critical for the project’s functionality.
 - The services should be stopped in the reverse order (inventory → product → API Gateway → service registry) to prevent runtime issues.
 
-This documentation provides a detailed guide to understand, set up, and run the project efficiently. Let me know if you need further enhancements!
+This documentation provides a detailed guide to understand, set up, and run the project efficiently.
+
+contact: harshvardhanthosar@gmail.com
