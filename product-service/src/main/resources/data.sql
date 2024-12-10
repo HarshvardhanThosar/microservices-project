@@ -1,28 +1,3 @@
-CREATE TABLE IF NOT EXISTS PRODUCT
-(
-    id
-    BIGINT
-    AUTO_INCREMENT
-    PRIMARY
-    KEY,
-    name
-    VARCHAR
-(
-    255
-) NOT NULL,
-    description TEXT NOT NULL,
-    price DECIMAL
-(
-    10,
-    2
-) NOT NULL,
-    active BOOLEAN NOT NULL,
-    deleted BOOLEAN NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    );
-
-
 INSERT INTO product (name, description, price, active, deleted, created_at, updated_at)
 VALUES ('Apple iPhone 14', 'The latest iPhone with advanced camera features and A16 Bionic chip.', 999.99, TRUE, FALSE,
         CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),

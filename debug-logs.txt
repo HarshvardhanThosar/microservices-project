@@ -1,0 +1,815 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [service-registry internal] load build definition from Dockerfile
+#1 transferring dockerfile: 342B done
+#1 DONE 0.0s
+
+#2 [service-registry internal] load metadata for docker.io/library/openjdk:23-jdk-slim
+#2 DONE 0.5s
+
+#3 [service-registry internal] load .dockerignore
+#3 transferring context: 109B done
+#3 DONE 0.0s
+
+#4 [service-registry internal] load build context
+#4 transferring context: 166B done
+#4 DONE 0.0s
+
+#5 [service-registry 1/3] FROM docker.io/library/openjdk:23-jdk-slim@sha256:7e7ee1ee0e0e4819beb1a4b04b4035f34df405410691459e05c10a859661dc35
+#5 resolve docker.io/library/openjdk:23-jdk-slim@sha256:7e7ee1ee0e0e4819beb1a4b04b4035f34df405410691459e05c10a859661dc35 0.0s done
+#5 DONE 0.0s
+
+#6 [service-registry 2/3] WORKDIR /app
+#6 CACHED
+
+#7 [service-registry 3/3] COPY target/*.jar app.jar
+#7 CACHED
+
+#8 [service-registry] exporting to image
+#8 exporting layers done
+#8 exporting manifest sha256:701affc7c22d1240a9f21962a314fa7c49bb4c53576e0d992eb0a6c897ada640 done
+#8 exporting config sha256:d0cac506fbfac0848b9bb2f93d27a9d785137599484d57ef7f3e22f9431a898d done
+#8 exporting attestation manifest sha256:03dead0f10f5d70e2151760ca2f8cb9656fe720c03dc592feb1e65e536d49356 done
+#8 exporting manifest list sha256:8be1c20c23dd3c1b04c6a582c6782a5fa10cd15cf0cefc787b037e43adb08c97 done
+#8 naming to docker.io/library/microservices-service-registry:latest done
+#8 unpacking to docker.io/library/microservices-service-registry:latest done
+#8 DONE 0.0s
+
+#9 [service-registry] resolving provenance for metadata file
+#9 DONE 0.0s
+
+#10 [inventory-service internal] load build definition from Dockerfile
+#10 transferring dockerfile: 342B done
+#10 DONE 0.0s
+
+#11 [product-service internal] load build definition from Dockerfile
+#11 transferring dockerfile: 333B done
+#11 DONE 0.0s
+
+#12 [api-gateway internal] load build definition from Dockerfile
+#12 transferring dockerfile: 342B done
+#12 DONE 0.0s
+
+#2 [product-service internal] load metadata for docker.io/library/openjdk:23-jdk-slim
+#2 DONE 0.8s
+
+#13 [inventory-service internal] load .dockerignore
+#13 transferring context: 109B done
+#13 DONE 0.0s
+
+#14 [product-service internal] load .dockerignore
+#14 transferring context: 109B done
+#14 DONE 0.0s
+
+#15 [api-gateway internal] load .dockerignore
+#15 transferring context: 109B done
+#15 DONE 0.0s
+
+#16 [api-gateway internal] load build context
+#16 transferring context: 161B done
+#16 DONE 0.0s
+
+#5 [product-service 1/3] FROM docker.io/library/openjdk:23-jdk-slim@sha256:7e7ee1ee0e0e4819beb1a4b04b4035f34df405410691459e05c10a859661dc35
+#5 resolve docker.io/library/openjdk:23-jdk-slim@sha256:7e7ee1ee0e0e4819beb1a4b04b4035f34df405410691459e05c10a859661dc35 0.0s done
+#5 DONE 0.0s
+
+#17 [api-gateway 3/3] COPY target/*.jar app.jar
+#17 CACHED
+
+#18 [inventory-service internal] load build context
+#18 transferring context: 167B 0.0s done
+#18 DONE 0.0s
+
+#19 [product-service internal] load build context
+#19 transferring context: 165B 0.0s done
+#19 DONE 0.0s
+
+#20 [product-service 3/3] COPY target/*.jar app.jar
+#20 CACHED
+
+#6 [product-service 2/3] WORKDIR /app
+#6 CACHED
+
+#21 [inventory-service 3/3] COPY target/*.jar app.jar
+#21 CACHED
+
+#22 [api-gateway] exporting to image
+#22 exporting layers 0.0s done
+#22 exporting manifest sha256:86940676b6caba4335d8a6151a4cddfff3493d24fe39562713c03fb695593d00 done
+#22 exporting config sha256:931efa30e9052358f2bf5a6f059c4e22892822b275099d2557970e6984ff8a12 done
+#22 exporting attestation manifest sha256:f9455671ebf23c8f6cbbce18ec93dd529087fa64c3c3eacd0c7dec25150b401e 0.0s done
+#22 exporting manifest list sha256:3fc05cbb29c957cb2b7fd3c09be3195325895d75f7d3f8c5c3923b3c08ec06f5 done
+#22 naming to docker.io/library/microservices-api-gateway:latest done
+#22 unpacking to docker.io/library/microservices-api-gateway:latest done
+#22 DONE 0.1s
+
+#23 [product-service] exporting to image
+#23 exporting layers done
+#23 exporting manifest sha256:e219051e976fd7cc70d3d09b270a2013892eaec943475ce09c0bbf529d70ef46 done
+#23 exporting config sha256:90e42205aae406152839a04b32bfb47b2bf58d8cf9a5270e7989e19d6a2d0dd5 done
+#23 exporting attestation manifest sha256:47bf30fb03fd4ed66bc1e5643e160f2cc656f8021a53078fa0f13038dc22091a 0.0s done
+#23 exporting manifest list sha256:36012d8ef21ca59709ab73a8ee0ebd8ef65eea3dbc96917b264e652dcd0fa8df
+#23 exporting manifest list sha256:36012d8ef21ca59709ab73a8ee0ebd8ef65eea3dbc96917b264e652dcd0fa8df done
+#23 naming to docker.io/library/microservices-product-service:latest done
+#23 unpacking to docker.io/library/microservices-product-service:latest 0.0s done
+#23 DONE 0.1s
+
+#24 [inventory-service] exporting to image
+#24 exporting layers done
+#24 exporting manifest sha256:0ef7d17c9f35ed24fbb37e8a5ef30b2013d14fc81a4543860d624fd01a359221 done
+#24 exporting config sha256:aaa82c07294706e8eea5d9d88be91c864f80c95dcf2be9d63b948c4a9378b6c6 done
+#24 exporting attestation manifest sha256:02a90bcd86c6f17b30b201492649dfffde2d41bf712603eb965ec22b71904ab7 0.0s done
+#24 exporting manifest list sha256:09a60fffea84eeca58031fd4de19af09dab43c87356494c1f2187d74149fd1b0 done
+#24 naming to docker.io/library/microservices-inventory-service:latest done
+#24 unpacking to docker.io/library/microservices-inventory-service:latest done
+#24 DONE 0.1s
+
+#25 [api-gateway] resolving provenance for metadata file
+#25 DONE 0.0s
+
+#26 [product-service] resolving provenance for metadata file
+#26 DONE 0.0s
+
+#27 [inventory-service] resolving provenance for metadata file
+#27 DONE 0.0s
+Attaching to h2-database, api-gateway-1, inventory-service-1, product-service-1, service-registry-1
+service-registry-1   | Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+service-registry-1   | 
+service-registry-1   |   .   ____          _            __ _ _
+service-registry-1   |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+service-registry-1   | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+service-registry-1   |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+service-registry-1   |   '  |____| .__|_| |_|_| |_\__, | / / / /
+service-registry-1   |  =========|_|==============|___/=/_/_/_/
+service-registry-1   | 
+h2-database          | TCP server running at tcp://172.18.0.2:1521 (others can connect)
+service-registry-1   |  :: Spring Boot ::                (v3.4.0)
+service-registry-1   | 
+service-registry-1   | 2024-12-10T14:59:11.779Z  INFO 1 --- [service-registry] [           main] c.h.s.ServiceRegistryApplication         : Starting ServiceRegistryApplication v0.0.1-SNAPSHOT using Java 23 with PID 1 (/app/app.jar started by root in /app)
+service-registry-1   | 2024-12-10T14:59:11.780Z  INFO 1 --- [service-registry] [           main] c.h.s.ServiceRegistryApplication         : No active profile set, falling back to 1 default profile: "default"
+h2-database          | Web Console server running at http://172.18.0.2:81 (others can connect)
+product-service-1    | 
+product-service-1    |   .   ____          _            __ _ _
+product-service-1    |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+product-service-1    | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+product-service-1    |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+product-service-1    |   '  |____| .__|_| |_|_| |_\__, | / / / /
+product-service-1    |  =========|_|==============|___/=/_/_/_/
+product-service-1    | 
+product-service-1    |  :: Spring Boot ::                (v3.4.0)
+product-service-1    | 
+api-gateway-1        | 
+api-gateway-1        |   .   ____          _            __ _ _
+api-gateway-1        |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+api-gateway-1        | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+api-gateway-1        |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+api-gateway-1        |   '  |____| .__|_| |_|_| |_\__, | / / / /
+api-gateway-1        |  =========|_|==============|___/=/_/_/_/
+api-gateway-1        | 
+api-gateway-1        |  :: Spring Boot ::                (v3.4.0)
+api-gateway-1        | 
+product-service-1    | 2024-12-10T14:59:12.051Z  INFO 1 --- [product-service] [           main] c.h.p.ProductServiceApplication          : Starting ProductServiceApplication v0.0.1-SNAPSHOT using Java 23 with PID 1 (/app/app.jar started by root in /app)
+product-service-1    | 2024-12-10T14:59:12.054Z  INFO 1 --- [product-service] [           main] c.h.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+api-gateway-1        | 2024-12-10T14:59:12.083Z  INFO 1 --- [api-gateway] [           main] c.h.api_gateway.ApiGatewayApplication    : Starting ApiGatewayApplication v0.0.1-SNAPSHOT using Java 23 with PID 1 (/app/app.jar started by root in /app)
+api-gateway-1        | 2024-12-10T14:59:12.088Z  INFO 1 --- [api-gateway] [           main] c.h.api_gateway.ApiGatewayApplication    : No active profile set, falling back to 1 default profile: "default"
+inventory-service-1  | 
+inventory-service-1  |   .   ____          _            __ _ _
+inventory-service-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+inventory-service-1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+inventory-service-1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+inventory-service-1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+inventory-service-1  |  =========|_|==============|___/=/_/_/_/
+inventory-service-1  | 
+inventory-service-1  |  :: Spring Boot ::                (v3.4.0)
+inventory-service-1  | 
+inventory-service-1  | 2024-12-10T14:59:12.270Z  INFO 1 --- [inventory-service] [           main] c.h.i.InventoryServiceApplication        : Starting InventoryServiceApplication v0.0.1-SNAPSHOT using Java 23 with PID 1 (/app/app.jar started by root in /app)
+inventory-service-1  | 2024-12-10T14:59:12.276Z  INFO 1 --- [inventory-service] [           main] c.h.i.InventoryServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+service-registry-1   | 2024-12-10T14:59:13.062Z  INFO 1 --- [service-registry] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5da2d3e6-123e-3707-9d61-50a6e16fbfd9
+service-registry-1   | 2024-12-10T14:59:13.356Z  INFO 1 --- [service-registry] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+service-registry-1   | 2024-12-10T14:59:13.376Z  INFO 1 --- [service-registry] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+service-registry-1   | 2024-12-10T14:59:13.376Z  INFO 1 --- [service-registry] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+service-registry-1   | 2024-12-10T14:59:13.399Z  INFO 1 --- [service-registry] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+service-registry-1   | 2024-12-10T14:59:13.400Z  INFO 1 --- [service-registry] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1543 ms
+service-registry-1   | Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+product-service-1    | 2024-12-10T14:59:13.526Z  INFO 1 --- [product-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+product-service-1    | 2024-12-10T14:59:13.640Z  INFO 1 --- [product-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 1 JPA repository interface.
+api-gateway-1        | 2024-12-10T14:59:13.671Z  INFO 1 --- [api-gateway] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=212df7d5-9842-38a2-bc36-ae3a6963f781
+inventory-service-1  | 2024-12-10T14:59:13.693Z  INFO 1 --- [inventory-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+inventory-service-1  | 2024-12-10T14:59:13.814Z  INFO 1 --- [inventory-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interface.
+product-service-1    | 2024-12-10T14:59:13.918Z  INFO 1 --- [product-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a0d5e556-119c-3c05-812c-56a2bacb37f7
+inventory-service-1  | 2024-12-10T14:59:14.036Z  INFO 1 --- [inventory-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bee6bf98-7b8e-3d67-bfcf-7c263022cc84
+service-registry-1   | 2024-12-10T14:59:14.433Z  INFO 1 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+service-registry-1   | 2024-12-10T14:59:14.435Z  INFO 1 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+product-service-1    | 2024-12-10T14:59:14.564Z  INFO 1 --- [product-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8053 (http)
+product-service-1    | 2024-12-10T14:59:14.596Z  INFO 1 --- [product-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+product-service-1    | 2024-12-10T14:59:14.597Z  INFO 1 --- [product-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+product-service-1    | 2024-12-10T14:59:14.619Z  INFO 1 --- [product-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+product-service-1    | 2024-12-10T14:59:14.620Z  INFO 1 --- [product-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2499 ms
+api-gateway-1        | 2024-12-10T14:59:14.735Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+api-gateway-1        | 2024-12-10T14:59:14.736Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+api-gateway-1        | 2024-12-10T14:59:14.740Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+api-gateway-1        | 2024-12-10T14:59:14.740Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+api-gateway-1        | 2024-12-10T14:59:14.740Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+api-gateway-1        | 2024-12-10T14:59:14.740Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+api-gateway-1        | 2024-12-10T14:59:14.740Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+api-gateway-1        | 2024-12-10T14:59:14.740Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+api-gateway-1        | 2024-12-10T14:59:14.740Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+api-gateway-1        | 2024-12-10T14:59:14.741Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+api-gateway-1        | 2024-12-10T14:59:14.741Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+api-gateway-1        | 2024-12-10T14:59:14.741Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+api-gateway-1        | 2024-12-10T14:59:14.741Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+api-gateway-1        | 2024-12-10T14:59:14.741Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+service-registry-1   | 2024-12-10T14:59:14.761Z  INFO 1 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+service-registry-1   | 2024-12-10T14:59:14.761Z  INFO 1 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+product-service-1    | 2024-12-10T14:59:14.763Z  INFO 1 --- [product-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+inventory-service-1  | 2024-12-10T14:59:14.817Z  INFO 1 --- [inventory-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8052 (http)
+inventory-service-1  | 2024-12-10T14:59:14.825Z  INFO 1 --- [inventory-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+inventory-service-1  | 2024-12-10T14:59:14.825Z  INFO 1 --- [inventory-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+inventory-service-1  | 2024-12-10T14:59:14.852Z  INFO 1 --- [inventory-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+inventory-service-1  | 2024-12-10T14:59:14.856Z  INFO 1 --- [inventory-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2469 ms
+product-service-1    | 2024-12-10T14:59:14.923Z  INFO 1 --- [product-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://h2-database:1521/mem:ms5-project user=SA
+product-service-1    | 2024-12-10T14:59:14.926Z  INFO 1 --- [product-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+product-service-1    | 2024-12-10T14:59:14.942Z  INFO 1 --- [product-service] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://h2-database:1521/mem:ms5-project'
+inventory-service-1  | 2024-12-10T14:59:15.018Z  INFO 1 --- [inventory-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+api-gateway-1        | 2024-12-10T14:59:15.028Z  INFO 1 --- [api-gateway] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+inventory-service-1  | 2024-12-10T14:59:15.133Z  INFO 1 --- [inventory-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://h2-database:1521/mem:ms5-project user=SA
+inventory-service-1  | 2024-12-10T14:59:15.134Z  INFO 1 --- [inventory-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+inventory-service-1  | 2024-12-10T14:59:15.143Z  INFO 1 --- [inventory-service] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://h2-database:1521/mem:ms5-project'
+api-gateway-1        | 2024-12-10T14:59:15.277Z  INFO 1 --- [api-gateway] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+product-service-1    | 2024-12-10T14:59:15.301Z  INFO 1 --- [product-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+product-service-1    | 2024-12-10T14:59:15.346Z  INFO 1 --- [product-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+api-gateway-1        | 2024-12-10T14:59:15.337Z  WARN 1 --- [api-gateway] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+product-service-1    | 2024-12-10T14:59:15.407Z  INFO 1 --- [product-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+api-gateway-1        | 2024-12-10T14:59:15.433Z  INFO 1 --- [api-gateway] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+api-gateway-1        | 2024-12-10T14:59:15.504Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+api-gateway-1        | 2024-12-10T14:59:15.515Z  INFO 1 --- [api-gateway] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+api-gateway-1        | 2024-12-10T14:59:15.516Z DEBUG 1 --- [api-gateway] [           main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+api-gateway-1        | 2024-12-10T14:59:15.517Z DEBUG 1 --- [api-gateway] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Config resolved to [AwsEndpoint{ serviceUrl='http://service-registry:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+api-gateway-1        | 2024-12-10T14:59:15.517Z DEBUG 1 --- [api-gateway] [           main] c.n.d.s.r.a.ZoneAffinityClusterResolver  : Local zone=defaultZone; resolved to: [AwsEndpoint{ serviceUrl='http://service-registry:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+inventory-service-1  | 2024-12-10T14:59:15.530Z  INFO 1 --- [inventory-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+api-gateway-1        | 2024-12-10T14:59:15.541Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+api-gateway-1        | 2024-12-10T14:59:15.541Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+api-gateway-1        | 2024-12-10T14:59:15.541Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+api-gateway-1        | 2024-12-10T14:59:15.541Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+api-gateway-1        | 2024-12-10T14:59:15.541Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+api-gateway-1        | 2024-12-10T14:59:15.541Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+api-gateway-1        | 2024-12-10T14:59:15.541Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+api-gateway-1        | 2024-12-10T14:59:15.542Z DEBUG 1 --- [api-gateway] [           main] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
+inventory-service-1  | 2024-12-10T14:59:15.617Z  INFO 1 --- [inventory-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+inventory-service-1  | 2024-12-10T14:59:15.650Z  INFO 1 --- [inventory-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+product-service-1    | 2024-12-10T14:59:15.725Z  INFO 1 --- [product-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+product-service-1    | 2024-12-10T14:59:15.770Z  WARN 1 --- [product-service] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+product-service-1    | 2024-12-10T14:59:15.783Z  INFO 1 --- [product-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+product-service-1    | 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+product-service-1    | 	Database driver: undefined/unknown
+product-service-1    | 	Database version: 2.1.214
+product-service-1    | 	Autocommit mode: undefined/unknown
+product-service-1    | 	Isolation level: undefined/unknown
+product-service-1    | 	Minimum pool size: undefined/unknown
+product-service-1    | 	Maximum pool size: undefined/unknown
+service-registry-1   | 2024-12-10T14:59:15.820Z  WARN 1 --- [service-registry] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+inventory-service-1  | 2024-12-10T14:59:15.821Z  INFO 1 --- [inventory-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+inventory-service-1  | 2024-12-10T14:59:15.844Z  WARN 1 --- [inventory-service] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+service-registry-1   | 2024-12-10T14:59:15.846Z  INFO 1 --- [service-registry] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+inventory-service-1  | 2024-12-10T14:59:15.853Z  INFO 1 --- [inventory-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+inventory-service-1  | 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+inventory-service-1  | 	Database driver: undefined/unknown
+inventory-service-1  | 	Database version: 2.1.214
+inventory-service-1  | 	Autocommit mode: undefined/unknown
+inventory-service-1  | 	Isolation level: undefined/unknown
+inventory-service-1  | 	Minimum pool size: undefined/unknown
+inventory-service-1  | 	Maximum pool size: undefined/unknown
+service-registry-1   | 2024-12-10T14:59:15.871Z  INFO 1 --- [service-registry] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+service-registry-1   | 2024-12-10T14:59:15.872Z  INFO 1 --- [service-registry] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+service-registry-1   | 2024-12-10T14:59:15.874Z  INFO 1 --- [service-registry] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1733842755873 with initial instances count: 0
+service-registry-1   | 2024-12-10T14:59:15.904Z  INFO 1 --- [service-registry] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+service-registry-1   | 2024-12-10T14:59:15.905Z  WARN 1 --- [service-registry] [           main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+service-registry-1   | 2024-12-10T14:59:15.910Z  INFO 1 --- [service-registry] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+service-registry-1   | 2024-12-10T14:59:15.910Z  INFO 1 --- [service-registry] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+api-gateway-1        | 2024-12-10T14:59:15.914Z  INFO 1 --- [api-gateway] [           main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://service-registry:8761/eureka/}, exception=I/O error on GET request for "http://service-registry:8761/eureka/apps/": Connect to http://service-registry:8761 [service-registry/172.18.0.3] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://service-registry:8761/eureka/apps/": Connect to http://service-registry:8761 [service-registry/172.18.0.3] failed: Connection refused
+api-gateway-1        | 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+api-gateway-1        | 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+api-gateway-1        | 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+api-gateway-1        | 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:174)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:162)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+api-gateway-1        | 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1046)
+api-gateway-1        | 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:961)
+api-gateway-1        | 	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:410)
+api-gateway-1        | 	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:245)
+api-gateway-1        | 	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:240)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:68)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:324)
+api-gateway-1        | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+api-gateway-1        | 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+api-gateway-1        | 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+api-gateway-1        | 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+api-gateway-1        | 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+api-gateway-1        | 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+api-gateway-1        | 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:375)
+api-gateway-1        | 	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:375)
+api-gateway-1        | 	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:372)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+api-gateway-1        | 	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:128)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:116)
+api-gateway-1        | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+api-gateway-1        | 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+api-gateway-1        | 	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+api-gateway-1        | 	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:482)
+api-gateway-1        | 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+api-gateway-1        | 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$SpringCGLIB$$0.getEurekaClient(<generated>)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:83)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:66)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:89)
+api-gateway-1        | 	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:323)
+api-gateway-1        | 	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:510)
+api-gateway-1        | 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+api-gateway-1        | 	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:295)
+api-gateway-1        | 	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:240)
+api-gateway-1        | 	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006)
+api-gateway-1        | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
+api-gateway-1        | 	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+api-gateway-1        | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+api-gateway-1        | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+api-gateway-1        | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+api-gateway-1        | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+api-gateway-1        | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+api-gateway-1        | 	at com.harshvardhanthosar.api_gateway.ApiGatewayApplication.main(ApiGatewayApplication.java:12)
+api-gateway-1        | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+api-gateway-1        | 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+api-gateway-1        | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+api-gateway-1        | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+api-gateway-1        | 	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+api-gateway-1        | Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://service-registry:8761 [service-registry/172.18.0.3] failed: Connection refused
+api-gateway-1        | 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+api-gateway-1        | 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+api-gateway-1        | 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+api-gateway-1        | 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+api-gateway-1        | 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+api-gateway-1        | 	at java.base/java.net.Socket.connect(Socket.java:760)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+api-gateway-1        | 	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+api-gateway-1        | 	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+api-gateway-1        | 	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+api-gateway-1        | 	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+api-gateway-1        | 	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+api-gateway-1        | 	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
+api-gateway-1        | 	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+api-gateway-1        | 	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+api-gateway-1        | 	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+api-gateway-1        | 	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+api-gateway-1        | 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+api-gateway-1        | 	... 69 more
+api-gateway-1        | 
+api-gateway-1        | 2024-12-10T14:59:15.914Z  WARN 1 --- [api-gateway] [           main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://service-registry:8761/eureka/apps/": Connect to http://service-registry:8761 [service-registry/172.18.0.3] failed: Connection refused
+api-gateway-1        | 2024-12-10T14:59:15.915Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/3570485f526a:api-gateway:8080 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+api-gateway-1        | 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+api-gateway-1        | 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1046)
+api-gateway-1        | 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:961)
+api-gateway-1        | 	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:410)
+api-gateway-1        | 	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:245)
+api-gateway-1        | 	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:240)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:68)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:324)
+api-gateway-1        | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+api-gateway-1        | 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+api-gateway-1        | 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+api-gateway-1        | 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+api-gateway-1        | 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+api-gateway-1        | 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+api-gateway-1        | 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:375)
+api-gateway-1        | 	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:375)
+api-gateway-1        | 	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:372)
+api-gateway-1        | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+api-gateway-1        | 	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:128)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:116)
+api-gateway-1        | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+api-gateway-1        | 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+api-gateway-1        | 	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+api-gateway-1        | 	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:482)
+api-gateway-1        | 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+api-gateway-1        | 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$SpringCGLIB$$0.getEurekaClient(<generated>)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:83)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:66)
+api-gateway-1        | 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:89)
+api-gateway-1        | 	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:323)
+api-gateway-1        | 	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:510)
+api-gateway-1        | 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+api-gateway-1        | 	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:295)
+api-gateway-1        | 	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:240)
+api-gateway-1        | 	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006)
+api-gateway-1        | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
+api-gateway-1        | 	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+api-gateway-1        | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+api-gateway-1        | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+api-gateway-1        | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+api-gateway-1        | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+api-gateway-1        | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+api-gateway-1        | 	at com.harshvardhanthosar.api_gateway.ApiGatewayApplication.main(ApiGatewayApplication.java:12)
+api-gateway-1        | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+api-gateway-1        | 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+api-gateway-1        | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+api-gateway-1        | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+api-gateway-1        | 	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+api-gateway-1        | 
+api-gateway-1        | 2024-12-10T14:59:15.915Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from primary servers failed
+api-gateway-1        | 2024-12-10T14:59:15.915Z  WARN 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+api-gateway-1        | 2024-12-10T14:59:15.915Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from backup servers failed
+service-registry-1   | 2024-12-10T14:59:15.920Z  INFO 1 --- [service-registry] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+api-gateway-1        | 2024-12-10T14:59:15.916Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+api-gateway-1        | 2024-12-10T14:59:15.926Z  INFO 1 --- [api-gateway] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+api-gateway-1        | 2024-12-10T14:59:15.928Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1733842755927 with initial instances count: 0
+api-gateway-1        | 2024-12-10T14:59:15.935Z  INFO 1 --- [api-gateway] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+api-gateway-1        | 2024-12-10T14:59:15.935Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1733842755935, current=UP, previous=STARTING]
+api-gateway-1        | 2024-12-10T14:59:15.936Z DEBUG 1 --- [api-gateway] [foReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
+api-gateway-1        | 2024-12-10T14:59:15.936Z DEBUG 1 --- [api-gateway] [foReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
+api-gateway-1        | 2024-12-10T14:59:15.939Z  INFO 1 --- [api-gateway] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/3570485f526a:api-gateway:8080: registering service...
+api-gateway-1        | 2024-12-10T14:59:15.941Z DEBUG 1 --- [api-gateway] [foReplicator-%d] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
+service-registry-1   | 2024-12-10T14:59:15.957Z  INFO 1 --- [service-registry] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-REGISTRY with eureka with status UP
+api-gateway-1        | 2024-12-10T14:59:15.979Z DEBUG 1 --- [api-gateway] [           main] o.s.c.g.filter.GatewayMetricsFilter      : New routes count: 0
+service-registry-1   | 2024-12-10T14:59:15.986Z  INFO 1 --- [service-registry] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+service-registry-1   | 2024-12-10T14:59:15.986Z  INFO 1 --- [service-registry] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+service-registry-1   | 2024-12-10T14:59:15.987Z  INFO 1 --- [service-registry] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+service-registry-1   | 2024-12-10T14:59:15.987Z  INFO 1 --- [service-registry] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+service-registry-1   | 2024-12-10T14:59:15.987Z  INFO 1 --- [service-registry] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+service-registry-1   | 2024-12-10T14:59:15.988Z  INFO 1 --- [service-registry] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+service-registry-1   | 2024-12-10T14:59:15.990Z  INFO 1 --- [service-registry] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+service-registry-1   | 2024-12-10T14:59:15.991Z  INFO 1 --- [service-registry] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+service-registry-1   | 2024-12-10T14:59:16.014Z  INFO 1 --- [service-registry] [           main] c.h.s.ServiceRegistryApplication         : Started ServiceRegistryApplication in 4.736 seconds (process running for 5.317)
+service-registry-1   | 2024-12-10T14:59:16.023Z  INFO 1 --- [service-registry] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+service-registry-1   | 2024-12-10T14:59:16.024Z  INFO 1 --- [service-registry] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+service-registry-1   | 2024-12-10T14:59:16.024Z  INFO 1 --- [service-registry] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+api-gateway-1        | 2024-12-10T14:59:16.031Z  INFO 1 --- [api-gateway] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+api-gateway-1        | 2024-12-10T14:59:16.035Z  INFO 1 --- [api-gateway] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+api-gateway-1        | 2024-12-10T14:59:16.052Z DEBUG 1 --- [api-gateway] [           main] o.s.c.g.filter.GatewayMetricsFilter      : New routes count: 0
+api-gateway-1        | 2024-12-10T14:59:16.053Z  INFO 1 --- [api-gateway] [           main] c.h.api_gateway.ApiGatewayApplication    : Started ApiGatewayApplication in 4.476 seconds (process running for 5.179)
+service-registry-1   | 2024-12-10T14:59:16.121Z  INFO 1 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/3570485f526a:api-gateway:8080 with status UP (replication=false)
+api-gateway-1        | 2024-12-10T14:59:16.135Z DEBUG 1 --- [api-gateway] [foReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Pinning to endpoint null
+api-gateway-1        | 2024-12-10T14:59:16.135Z  INFO 1 --- [api-gateway] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/3570485f526a:api-gateway:8080 - registration status: 204
+product-service-1    | 2024-12-10T14:59:16.247Z  INFO 1 --- [product-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+product-service-1    | 2024-12-10T14:59:16.252Z DEBUG 1 --- [product-service] [           main] org.hibernate.SQL                        : 
+product-service-1    |     drop table if exists inventory cascade 
+product-service-1    | Hibernate: 
+product-service-1    |     drop table if exists inventory cascade 
+product-service-1    | 2024-12-10T14:59:16.256Z DEBUG 1 --- [product-service] [           main] org.hibernate.SQL                        : 
+product-service-1    |     drop table if exists product cascade 
+product-service-1    | Hibernate: 
+product-service-1    |     drop table if exists product cascade 
+product-service-1    | 2024-12-10T14:59:16.259Z DEBUG 1 --- [product-service] [           main] org.hibernate.SQL                        : 
+product-service-1    |     create table inventory (
+product-service-1    |         active boolean not null,
+product-service-1    |         deleted boolean not null,
+product-service-1    |         quantity integer,
+product-service-1    |         created_at timestamp(6) not null,
+product-service-1    |         id bigint generated by default as identity,
+product-service-1    |         product_id bigint unique,
+product-service-1    |         updated_at timestamp(6) not null,
+product-service-1    |         primary key (id)
+product-service-1    |     )
+product-service-1    | Hibernate: 
+product-service-1    |     create table inventory (
+product-service-1    |         active boolean not null,
+product-service-1    |         deleted boolean not null,
+product-service-1    |         quantity integer,
+product-service-1    |         created_at timestamp(6) not null,
+product-service-1    |         id bigint generated by default as identity,
+product-service-1    |         product_id bigint unique,
+product-service-1    |         updated_at timestamp(6) not null,
+product-service-1    |         primary key (id)
+product-service-1    |     )
+product-service-1    | 2024-12-10T14:59:16.267Z DEBUG 1 --- [product-service] [           main] org.hibernate.SQL                        : 
+product-service-1    |     create table product (
+product-service-1    |         active boolean not null,
+product-service-1    |         deleted boolean not null,
+product-service-1    |         price numeric(38,2),
+product-service-1    |         created_at timestamp(6) not null,
+product-service-1    |         id bigint generated by default as identity,
+product-service-1    |         updated_at timestamp(6) not null,
+product-service-1    |         description varchar(255),
+product-service-1    |         name varchar(255),
+product-service-1    |         primary key (id)
+product-service-1    |     )
+product-service-1    | Hibernate: 
+product-service-1    |     create table product (
+product-service-1    |         active boolean not null,
+product-service-1    |         deleted boolean not null,
+product-service-1    |         price numeric(38,2),
+product-service-1    |         created_at timestamp(6) not null,
+product-service-1    |         id bigint generated by default as identity,
+product-service-1    |         updated_at timestamp(6) not null,
+product-service-1    |         description varchar(255),
+product-service-1    |         name varchar(255),
+product-service-1    |         primary key (id)
+product-service-1    |     )
+product-service-1    | 2024-12-10T14:59:16.274Z DEBUG 1 --- [product-service] [           main] org.hibernate.SQL                        : 
+product-service-1    |     alter table if exists inventory 
+product-service-1    |        add constraint FKp7gj4l80fx8v0uap3b2crjwp5 
+product-service-1    |        foreign key (product_id) 
+product-service-1    |        references product
+product-service-1    | Hibernate: 
+product-service-1    |     alter table if exists inventory 
+product-service-1    |        add constraint FKp7gj4l80fx8v0uap3b2crjwp5 
+product-service-1    |        foreign key (product_id) 
+product-service-1    |        references product
+product-service-1    | 2024-12-10T14:59:16.287Z  INFO 1 --- [product-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+inventory-service-1  | 2024-12-10T14:59:16.310Z  INFO 1 --- [inventory-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+inventory-service-1  | 2024-12-10T14:59:16.316Z DEBUG 1 --- [inventory-service] [           main] org.hibernate.SQL                        : 
+inventory-service-1  |     drop table if exists inventory cascade 
+inventory-service-1  | Hibernate: 
+inventory-service-1  |     drop table if exists inventory cascade 
+inventory-service-1  | 2024-12-10T14:59:16.326Z DEBUG 1 --- [inventory-service] [           main] org.hibernate.SQL                        : 
+inventory-service-1  |     drop table if exists product cascade 
+inventory-service-1  | Hibernate: 
+inventory-service-1  |     drop table if exists product cascade 
+inventory-service-1  | 2024-12-10T14:59:16.330Z DEBUG 1 --- [inventory-service] [           main] org.hibernate.SQL                        : 
+inventory-service-1  |     create table inventory (
+inventory-service-1  |         active boolean not null,
+inventory-service-1  |         deleted boolean not null,
+inventory-service-1  |         quantity integer,
+inventory-service-1  |         created_at timestamp(6) not null,
+inventory-service-1  |         id bigint generated by default as identity,
+inventory-service-1  |         product_id bigint unique,
+inventory-service-1  |         updated_at timestamp(6) not null,
+inventory-service-1  |         primary key (id)
+inventory-service-1  |     )
+inventory-service-1  | Hibernate: 
+inventory-service-1  |     create table inventory (
+inventory-service-1  |         active boolean not null,
+inventory-service-1  |         deleted boolean not null,
+inventory-service-1  |         quantity integer,
+inventory-service-1  |         created_at timestamp(6) not null,
+inventory-service-1  |         id bigint generated by default as identity,
+inventory-service-1  |         product_id bigint unique,
+inventory-service-1  |         updated_at timestamp(6) not null,
+inventory-service-1  |         primary key (id)
+inventory-service-1  |     )
+inventory-service-1  | 2024-12-10T14:59:16.334Z DEBUG 1 --- [inventory-service] [           main] org.hibernate.SQL                        : 
+inventory-service-1  |     create table product (
+inventory-service-1  |         active boolean not null,
+inventory-service-1  |         deleted boolean not null,
+inventory-service-1  |         price numeric(38,2),
+inventory-service-1  |         created_at timestamp(6) not null,
+inventory-service-1  |         id bigint generated by default as identity,
+inventory-service-1  |         updated_at timestamp(6) not null,
+inventory-service-1  |         description varchar(255),
+inventory-service-1  |         name varchar(255),
+inventory-service-1  |         primary key (id)
+inventory-service-1  |     )
+inventory-service-1  | Hibernate: 
+inventory-service-1  |     create table product (
+inventory-service-1  |         active boolean not null,
+inventory-service-1  |         deleted boolean not null,
+inventory-service-1  |         price numeric(38,2),
+inventory-service-1  |         created_at timestamp(6) not null,
+inventory-service-1  |         id bigint generated by default as identity,
+inventory-service-1  |         updated_at timestamp(6) not null,
+inventory-service-1  |         description varchar(255),
+inventory-service-1  |         name varchar(255),
+inventory-service-1  |         primary key (id)
+inventory-service-1  |     )
+inventory-service-1  | 2024-12-10T14:59:16.336Z DEBUG 1 --- [inventory-service] [           main] org.hibernate.SQL                        : 
+inventory-service-1  |     alter table if exists inventory 
+inventory-service-1  |        add constraint FKp7gj4l80fx8v0uap3b2crjwp5 
+inventory-service-1  |        foreign key (product_id) 
+inventory-service-1  |        references product
+inventory-service-1  | Hibernate: 
+inventory-service-1  |     alter table if exists inventory 
+inventory-service-1  |        add constraint FKp7gj4l80fx8v0uap3b2crjwp5 
+inventory-service-1  |        foreign key (product_id) 
+inventory-service-1  |        references product
+inventory-service-1  | 2024-12-10T14:59:16.344Z  INFO 1 --- [inventory-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+product-service-1    | 2024-12-10T14:59:16.470Z  INFO 1 --- [product-service] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+inventory-service-1  | 2024-12-10T14:59:16.560Z  INFO 1 --- [inventory-service] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+inventory-service-1  | 2024-12-10T14:59:16.891Z  WARN 1 --- [inventory-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+inventory-service-1  | 2024-12-10T14:59:16.938Z  INFO 1 --- [inventory-service] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'PRODUCT-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+product-service-1    | 2024-12-10T14:59:17.090Z  WARN 1 --- [product-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+inventory-service-1  | 2024-12-10T14:59:17.674Z  INFO 1 --- [inventory-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+inventory-service-1  | 2024-12-10T14:59:17.703Z  WARN 1 --- [inventory-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+inventory-service-1  | 2024-12-10T14:59:17.716Z  INFO 1 --- [inventory-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+inventory-service-1  | 2024-12-10T14:59:17.773Z  INFO 1 --- [inventory-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+inventory-service-1  | 2024-12-10T14:59:17.786Z  INFO 1 --- [inventory-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+inventory-service-1  | 2024-12-10T14:59:17.788Z  INFO 1 --- [inventory-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+inventory-service-1  | 2024-12-10T14:59:17.793Z  INFO 1 --- [inventory-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+inventory-service-1  | 2024-12-10T14:59:17.793Z  INFO 1 --- [inventory-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+inventory-service-1  | 2024-12-10T14:59:17.793Z  INFO 1 --- [inventory-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+inventory-service-1  | 2024-12-10T14:59:17.793Z  INFO 1 --- [inventory-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+inventory-service-1  | 2024-12-10T14:59:17.793Z  INFO 1 --- [inventory-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+inventory-service-1  | 2024-12-10T14:59:17.793Z  INFO 1 --- [inventory-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+inventory-service-1  | 2024-12-10T14:59:17.793Z  INFO 1 --- [inventory-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+product-service-1    | 2024-12-10T14:59:17.815Z  INFO 1 --- [product-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+product-service-1    | 2024-12-10T14:59:17.884Z  WARN 1 --- [product-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+product-service-1    | 2024-12-10T14:59:17.904Z  INFO 1 --- [product-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+product-service-1    | 2024-12-10T14:59:17.978Z  INFO 1 --- [product-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+product-service-1    | 2024-12-10T14:59:17.999Z  INFO 1 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+product-service-1    | 2024-12-10T14:59:18.001Z  INFO 1 --- [product-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+product-service-1    | 2024-12-10T14:59:18.006Z  INFO 1 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+product-service-1    | 2024-12-10T14:59:18.006Z  INFO 1 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+product-service-1    | 2024-12-10T14:59:18.006Z  INFO 1 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+product-service-1    | 2024-12-10T14:59:18.006Z  INFO 1 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+product-service-1    | 2024-12-10T14:59:18.006Z  INFO 1 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+product-service-1    | 2024-12-10T14:59:18.006Z  INFO 1 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+product-service-1    | 2024-12-10T14:59:18.006Z  INFO 1 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+inventory-service-1  | 2024-12-10T14:59:18.129Z  INFO 1 --- [inventory-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+inventory-service-1  | 2024-12-10T14:59:18.130Z  INFO 1 --- [inventory-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+inventory-service-1  | 2024-12-10T14:59:18.131Z  INFO 1 --- [inventory-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+inventory-service-1  | 2024-12-10T14:59:18.132Z  INFO 1 --- [inventory-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1733842758132 with initial instances count: 1
+inventory-service-1  | 2024-12-10T14:59:18.136Z  INFO 1 --- [inventory-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application INVENTORY-SERVICE with eureka with status UP
+inventory-service-1  | 2024-12-10T14:59:18.136Z  INFO 1 --- [inventory-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1733842758136, current=UP, previous=STARTING]
+inventory-service-1  | 2024-12-10T14:59:18.141Z  INFO 1 --- [inventory-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_INVENTORY-SERVICE/8c26cf16bbc2:inventory-service:8052: registering service...
+inventory-service-1  | 2024-12-10T14:59:18.152Z  INFO 1 --- [inventory-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8052 (http) with context path '/'
+inventory-service-1  | 2024-12-10T14:59:18.153Z  INFO 1 --- [inventory-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8052
+inventory-service-1  | 2024-12-10T14:59:18.164Z  INFO 1 --- [inventory-service] [           main] c.h.i.InventoryServiceApplication        : Started InventoryServiceApplication in 6.472 seconds (process running for 7.292)
+service-registry-1   | 2024-12-10T14:59:18.180Z  INFO 1 --- [service-registry] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/8c26cf16bbc2:inventory-service:8052 with status UP (replication=false)
+inventory-service-1  | 2024-12-10T14:59:18.182Z  INFO 1 --- [inventory-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_INVENTORY-SERVICE/8c26cf16bbc2:inventory-service:8052 - registration status: 204
+product-service-1    | 2024-12-10T14:59:18.250Z  INFO 1 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+product-service-1    | 2024-12-10T14:59:18.251Z  INFO 1 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+product-service-1    | 2024-12-10T14:59:18.252Z  INFO 1 --- [product-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+product-service-1    | 2024-12-10T14:59:18.253Z  INFO 1 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1733842758253 with initial instances count: 1
+product-service-1    | 2024-12-10T14:59:18.256Z  INFO 1 --- [product-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-SERVICE with eureka with status UP
+product-service-1    | 2024-12-10T14:59:18.256Z  INFO 1 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1733842758256, current=UP, previous=STARTING]
+product-service-1    | 2024-12-10T14:59:18.257Z  INFO 1 --- [product-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/ae3b69447d02:product-service:8053: registering service...
+product-service-1    | 2024-12-10T14:59:18.264Z  INFO 1 --- [product-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8053 (http) with context path '/'
+product-service-1    | 2024-12-10T14:59:18.265Z  INFO 1 --- [product-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8053
+product-service-1    | 2024-12-10T14:59:18.276Z  INFO 1 --- [product-service] [           main] c.h.p.ProductServiceApplication          : Started ProductServiceApplication in 6.721 seconds (process running for 7.404)
+service-registry-1   | 2024-12-10T14:59:18.279Z  INFO 1 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/ae3b69447d02:product-service:8053 with status UP (replication=false)
+product-service-1    | 2024-12-10T14:59:18.280Z  INFO 1 --- [product-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/ae3b69447d02:product-service:8053 - registration status: 204
+api-gateway-1        | 2024-12-10T14:59:45.925Z  INFO 1 --- [api-gateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+api-gateway-1        | 2024-12-10T14:59:45.926Z  INFO 1 --- [api-gateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+api-gateway-1        | 2024-12-10T14:59:45.926Z  INFO 1 --- [api-gateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+api-gateway-1        | 2024-12-10T14:59:45.926Z  INFO 1 --- [api-gateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+api-gateway-1        | 2024-12-10T14:59:45.926Z  INFO 1 --- [api-gateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+api-gateway-1        | 2024-12-10T14:59:45.927Z  INFO 1 --- [api-gateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+api-gateway-1        | 2024-12-10T14:59:45.927Z  INFO 1 --- [api-gateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+api-gateway-1        | 2024-12-10T14:59:45.927Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
+api-gateway-1        | 2024-12-10T14:59:45.962Z DEBUG 1 --- [api-gateway] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/3570485f526a:api-gateway:8080 - Heartbeat status: 200
+api-gateway-1        | 2024-12-10T14:59:45.974Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Pinning to endpoint null
+api-gateway-1        | 2024-12-10T14:59:45.974Z  INFO 1 --- [api-gateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+api-gateway-1        | 2024-12-10T14:59:45.975Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Got full registry with apps hashcode UP_3_
+api-gateway-1        | 2024-12-10T14:59:45.975Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The total number of all instances in the client now is 3
+api-gateway-1        | 2024-12-10T14:59:45.983Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition ReactiveCompositeDiscoveryClient_API-GATEWAY applying {pattern=/api-gateway/**} to Path
+api-gateway-1        | 2024-12-10T14:59:45.995Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition ReactiveCompositeDiscoveryClient_API-GATEWAY applying filter {regexp=/api-gateway/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+api-gateway-1        | 2024-12-10T14:59:46.001Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: ReactiveCompositeDiscoveryClient_API-GATEWAY
+api-gateway-1        | 2024-12-10T14:59:46.002Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition ReactiveCompositeDiscoveryClient_INVENTORY-SERVICE applying {pattern=/inventory-service/**} to Path
+api-gateway-1        | 2024-12-10T14:59:46.002Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition ReactiveCompositeDiscoveryClient_INVENTORY-SERVICE applying filter {regexp=/inventory-service/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+api-gateway-1        | 2024-12-10T14:59:46.003Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: ReactiveCompositeDiscoveryClient_INVENTORY-SERVICE
+api-gateway-1        | 2024-12-10T14:59:46.003Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition ReactiveCompositeDiscoveryClient_PRODUCT-SERVICE applying {pattern=/product-service/**} to Path
+api-gateway-1        | 2024-12-10T14:59:46.003Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition ReactiveCompositeDiscoveryClient_PRODUCT-SERVICE applying filter {regexp=/product-service/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+api-gateway-1        | 2024-12-10T14:59:46.004Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: ReactiveCompositeDiscoveryClient_PRODUCT-SERVICE
+api-gateway-1        | 2024-12-10T14:59:46.005Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] o.s.c.g.filter.GatewayMetricsFilter      : New routes count: 3
+api-gateway-1        | 2024-12-10T14:59:46.005Z DEBUG 1 --- [api-gateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 
+api-gateway-1        | 2024-12-10T14:59:46.881Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: ReactiveCompositeDiscoveryClient_PRODUCT-SERVICE
+api-gateway-1        | 2024-12-10T14:59:46.885Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/product-service/products/] to Route{id='ReactiveCompositeDiscoveryClient_PRODUCT-SERVICE', uri=lb://PRODUCT-SERVICE, order=0, predicate=Paths: [/product-service/**], match trailing slash: true, gatewayFilters=[[[RewritePath /product-service/?(?<remaining>.*) = '/${remaining}'], order = 1]], metadata={management.port=8053}}
+api-gateway-1        | 2024-12-10T14:59:46.885Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] o.s.c.g.h.RoutePredicateHandlerMapping   : [9f0adb46-14] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@dada335
+api-gateway-1        | 2024-12-10T14:59:46.886Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@7be94cd6}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@2b999ee8}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@458031da}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@27ab206}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@6cc48a17}, order = 0], [[RewritePath /product-service/?(?<remaining>.*) = '/${remaining}'], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@20cff21e}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@447521e}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2fde9469}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@3344d163}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1ecf0ac6}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@463045fb}, order = 2147483647]]
+api-gateway-1        | 2024-12-10T14:59:46.926Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] g.f.h.o.ObservedRequestHttpHeadersFilter : Will instrument the HTTP request headers [User-Agent:"PostmanRuntime/7.43.0", Accept:"*/*", Postman-Token:"8aa38388-163f-4a19-af99-5d97804feb5a", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Forwarded:"proto=http;host="localhost:8080";for="172.18.0.1:64560"", X-Forwarded-For:"172.18.0.1", X-Forwarded-Proto:"http", X-Forwarded-Prefix:"/product-service", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+api-gateway-1        | 2024-12-10T14:59:46.928Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] g.f.h.o.ObservedRequestHttpHeadersFilter : Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='ReactiveCompositeDiscoveryClient_PRODUCT-SERVICE', spring.cloud.gateway.route.uri='lb://PRODUCT-SERVICE'], highCardinalityKeyValues=[http.uri='http://localhost:8080/products/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=4.33834E-4, duration(nanos)=433834.0, startTimeNanos=3337307439558}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@6753b292'], parentObservation={name=http.server.requests(null), error=null, context=name='http.server.requests', contextualName='null', error='null', lowCardinalityKeyValues=[exception='none', method='GET', outcome='SUCCESS', status='200', uri='UNKNOWN'], highCardinalityKeyValues=[http.url='/product-service/products/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.050099792, duration(nanos)=5.0099792E7, startTimeNanos=3337257841933}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@2002ef09'], parentObservation=null}} created for the request. New headers are [User-Agent:"PostmanRuntime/7.43.0", Accept:"*/*", Postman-Token:"8aa38388-163f-4a19-af99-5d97804feb5a", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Forwarded:"proto=http;host="localhost:8080";for="172.18.0.1:64560"", X-Forwarded-For:"172.18.0.1", X-Forwarded-Proto:"http", X-Forwarded-Prefix:"/product-service", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+api-gateway-1        | 2024-12-10T14:59:46.980Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] .o.ObservationClosingWebExceptionHandler : An exception occurred and observation was not previously stopped, will stop it. The exception was [java.net.UnknownHostException: Failed to resolve '8053' [A(1)]]
+api-gateway-1        | 2024-12-10T14:59:46.981Z ERROR 1 --- [api-gateway] [ctor-http-nio-2] a.w.r.e.AbstractErrorWebExceptionHandler : [9f0adb46-14]  500 Server Error for HTTP GET "/product-service/products/"
+api-gateway-1        | 
+api-gateway-1        | java.net.UnknownHostException: Failed to resolve '8053' [A(1)]
+api-gateway-1        | 	at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1150) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+api-gateway-1        | Error has been observed at the following site(s):
+api-gateway-1        | 	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+api-gateway-1        | 	*__checkpoint ⇢ HTTP GET "/product-service/products/" [ExceptionHandlingWebHandler]
+api-gateway-1        | Original Stack Trace:
+api-gateway-1        | 		at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1150) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1097) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:455) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsResolveContext.onResponse(DnsResolveContext.java:686) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsResolveContext.access$500(DnsResolveContext.java:70) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:513) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:308) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:299) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsNameResolver$DnsResponseHandler.channelRead(DnsNameResolver.java:1491) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107) ~[netty-codec-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:97) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+api-gateway-1        | Caused by: io.netty.resolver.dns.DnsErrorCauseException: Query failed with NXDOMAIN
+api-gateway-1        | 	at io.netty.resolver.dns.DnsResolveContext.onResponse(..)(Unknown Source) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 
+api-gateway-1        | 2024-12-10T14:59:47.889Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: ReactiveCompositeDiscoveryClient_PRODUCT-SERVICE
+api-gateway-1        | 2024-12-10T14:59:47.889Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/product-service/products/] to Route{id='ReactiveCompositeDiscoveryClient_PRODUCT-SERVICE', uri=lb://PRODUCT-SERVICE, order=0, predicate=Paths: [/product-service/**], match trailing slash: true, gatewayFilters=[[[RewritePath /product-service/?(?<remaining>.*) = '/${remaining}'], order = 1]], metadata={management.port=8053}}
+api-gateway-1        | 2024-12-10T14:59:47.889Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] o.s.c.g.h.RoutePredicateHandlerMapping   : [9f0adb46-15] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@dada335
+api-gateway-1        | 2024-12-10T14:59:47.890Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@7be94cd6}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@2b999ee8}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@458031da}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@27ab206}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@6cc48a17}, order = 0], [[RewritePath /product-service/?(?<remaining>.*) = '/${remaining}'], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@20cff21e}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@447521e}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2fde9469}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@3344d163}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@1ecf0ac6}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@463045fb}, order = 2147483647]]
+api-gateway-1        | 2024-12-10T14:59:47.892Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] g.f.h.o.ObservedRequestHttpHeadersFilter : Will instrument the HTTP request headers [User-Agent:"PostmanRuntime/7.43.0", Accept:"*/*", Postman-Token:"122be41d-b40d-4847-acb6-0e053c4b9fd0", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Forwarded:"proto=http;host="localhost:8080";for="172.18.0.1:64560"", X-Forwarded-For:"172.18.0.1", X-Forwarded-Proto:"http", X-Forwarded-Prefix:"/product-service", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+api-gateway-1        | 2024-12-10T14:59:47.893Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] g.f.h.o.ObservedRequestHttpHeadersFilter : Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='ReactiveCompositeDiscoveryClient_PRODUCT-SERVICE', spring.cloud.gateway.route.uri='lb://PRODUCT-SERVICE'], highCardinalityKeyValues=[http.uri='http://localhost:8080/products/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=1.06625E-4, duration(nanos)=106625.0, startTimeNanos=3338272385559}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@52b668f6'], parentObservation={name=http.server.requests(null), error=null, context=name='http.server.requests', contextualName='null', error='null', lowCardinalityKeyValues=[exception='none', method='GET', outcome='SUCCESS', status='200', uri='UNKNOWN'], highCardinalityKeyValues=[http.url='/product-service/products/'], map=[class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.005347, duration(nanos)=5347000.0, startTimeNanos=3338267228642}', class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@250e5374'], parentObservation=null}} created for the request. New headers are [User-Agent:"PostmanRuntime/7.43.0", Accept:"*/*", Postman-Token:"122be41d-b40d-4847-acb6-0e053c4b9fd0", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Forwarded:"proto=http;host="localhost:8080";for="172.18.0.1:64560"", X-Forwarded-For:"172.18.0.1", X-Forwarded-Proto:"http", X-Forwarded-Prefix:"/product-service", X-Forwarded-Port:"8080", X-Forwarded-Host:"localhost:8080"]
+api-gateway-1        | 2024-12-10T14:59:47.897Z DEBUG 1 --- [api-gateway] [ctor-http-nio-2] .o.ObservationClosingWebExceptionHandler : An exception occurred and observation was not previously stopped, will stop it. The exception was [java.net.UnknownHostException: Failed to resolve '8053' [A(1)]]
+api-gateway-1        | 2024-12-10T14:59:47.898Z ERROR 1 --- [api-gateway] [ctor-http-nio-2] a.w.r.e.AbstractErrorWebExceptionHandler : [9f0adb46-15]  500 Server Error for HTTP GET "/product-service/products/"
+api-gateway-1        | 
+api-gateway-1        | java.net.UnknownHostException: Failed to resolve '8053' [A(1)]
+api-gateway-1        | 	at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1150) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+api-gateway-1        | Error has been observed at the following site(s):
+api-gateway-1        | 	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+api-gateway-1        | 	*__checkpoint ⇢ HTTP GET "/product-service/products/" [ExceptionHandlingWebHandler]
+api-gateway-1        | Original Stack Trace:
+api-gateway-1        | 		at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1150) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1097) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:455) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsResolveContext.onResponse(DnsResolveContext.java:686) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsResolveContext.access$500(DnsResolveContext.java:70) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:513) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:308) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:299) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.resolver.dns.DnsNameResolver$DnsResponseHandler.channelRead(DnsNameResolver.java:1491) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107) ~[netty-codec-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:97) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 		at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+api-gateway-1        | Caused by: io.netty.resolver.dns.DnsErrorCauseException: Query failed with NXDOMAIN
+api-gateway-1        | 	at io.netty.resolver.dns.DnsResolveContext.onResponse(..)(Unknown Source) ~[netty-resolver-dns-4.1.115.Final.jar!/:4.1.115.Final]
+api-gateway-1        | 

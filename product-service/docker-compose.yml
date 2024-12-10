@@ -1,8 +1,0 @@
-version: '3.8'
-services:
-  api-gateway:
-    image: product-service:latest
-    ports:
-      - "8050:8050"
-    depends_on:
-      - eureka-server # If using Eureka service discovery

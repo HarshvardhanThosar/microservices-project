@@ -1,0 +1,81 @@
+services:
+  service-registry:
+    build:
+      context: ./service-registry
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    networks:
+      - app-network
+    environment:
+      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://service-registry:8761/eureka/
+      # - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://localhost:8761/eureka/
+    depends_on:
+      - h2-database
+
+  api-gateway:
+    build:
+      context: ./api-gateway
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+    depends_on:
+      # - product-service
+      # - inventory-service
+      - service-registry
+    environment:
+      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://service-registry:8761/eureka/
+      # - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://localhost:8761/eureka/
+
+  product-service:
+    build:
+      context: ./product-service
+      dockerfile: Dockerfile
+    ports:
+      - "8053:8053"
+    networks:
+      - app-network
+    depends_on:
+      - h2-database
+      - service-registry
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:h2:tcp://h2-database:1521/mem:ms5-project
+      - SPRING_DATASOURCE_USERNAME=sa
+      - SPRING_DATASOURCE_PASSWORD=
+      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://service-registry:8761/eureka/
+      # - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://localhost:8761/eureka/
+
+  inventory-service:
+    build:
+      context: ./inventory-service
+      dockerfile: Dockerfile
+    ports:
+      - "8052:8052"
+    networks:
+      - app-network
+    depends_on:
+      - h2-database
+      - service-registry
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:h2:tcp://h2-database:1521/mem:ms5-project
+      - SPRING_DATASOURCE_USERNAME=sa
+      - SPRING_DATASOURCE_PASSWORD=
+      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://service-registry:8761/eureka/
+      # - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://localhost:8761/eureka/
+
+  h2-database:
+    image: oscarfonts/h2:latest
+    container_name: h2-database
+    ports:
+      - "1521:1521"
+      - "81:81"
+    networks:
+      - app-network
+    environment:
+      H2_OPTIONS: -tcp -tcpAllowOthers -ifNotExists
+
+networks:
+  app-network:
+    driver: bridge
