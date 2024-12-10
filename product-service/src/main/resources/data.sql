@@ -39,25 +39,3 @@ VALUES ('Apple iPhone 14', 'The latest iPhone with advanced camera features and 
         CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
        ('Xbox Series X', 'A powerful gaming console with 4K and HDR capabilities.', 499.99, TRUE, FALSE,
         CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
-
--- INSERT INTO inventory (quantity, product_id, active, deleted, created_at, updated_at) VALUES
---                                                                                           (100, 1, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (120, 2, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (80, 3, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (50, 4, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (60, 5, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (150, 6, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (90, 7, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (200, 8, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (40, 9, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (70, 10, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (30, 11, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (110, 12, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (130, 13, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (220, 14, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (180, 15, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (90, 16, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (75, 17, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (65, 18, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (20, 19, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
---                                                                                           (25, 20, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
