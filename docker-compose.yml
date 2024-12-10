@@ -22,8 +22,8 @@ services:
     networks:
       - app-network
     depends_on:
-      # - product-service
-      # - inventory-service
+      - product-service
+      - inventory-service
       - service-registry
     environment:
       - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://service-registry:8761/eureka/
