@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   h2-database:
     image: oscarfonts/h2:latest
