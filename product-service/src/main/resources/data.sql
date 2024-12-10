@@ -30,14 +30,6 @@ VALUES ('Apple iPhone 14', 'The latest iPhone with advanced camera features and 
        ('Adidas Ultraboost 21', 'High-performance running shoes with energy return.', 159.99, TRUE, FALSE,
         CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
        ('Garmin Forerunner 955', 'A premium smartwatch for fitness enthusiasts.', 499.99, TRUE, FALSE,
-        CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-       ('Apple Watch Series 8', 'A smartwatch with advanced health monitoring features.', 399.99, TRUE, FALSE,
-        CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-       ('Samsung Galaxy Watch 6', 'A sleek smartwatch with fitness tracking and LTE connectivity.', 349.99, TRUE, FALSE,
-        CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-       ('Sony PS5 Console', 'The latest PlayStation with immersive gaming experience.', 499.99, TRUE, FALSE,
-        CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-       ('Xbox Series X', 'A powerful gaming console with 4K and HDR capabilities.', 499.99, TRUE, FALSE,
         CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
 
 INSERT INTO inventory (quantity, product_id, active, deleted, created_at, updated_at) VALUES
@@ -56,8 +48,4 @@ INSERT INTO inventory (quantity, product_id, active, deleted, created_at, update
                                                                                           (130, 13, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
                                                                                           (220, 14, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
                                                                                           (180, 15, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-                                                                                          (90, 16, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-                                                                                          (75, 17, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-                                                                                          (65, 18, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-                                                                                          (20, 19, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-                                                                                          (25, 20, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+                                                                                          (90, 16, TRUE, FALSE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
